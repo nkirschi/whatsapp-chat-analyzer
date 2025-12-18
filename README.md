@@ -6,7 +6,7 @@ Tool to get insights into a whatsapp chat.
 ## Usage
 1. Clone the repository and install the required dependencies.
    ```bash
-   git clone https://github.com/yourusername/whatsapp-chat-analyzer.git
+   git clone https://github.com/MrStrenggeheim/whatsapp-chat-analyzer
    cd whatsapp-chat-analyzer
    pip install -r requirements.txt
    ```
