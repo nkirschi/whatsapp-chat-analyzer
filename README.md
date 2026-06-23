@@ -15,6 +15,8 @@ Tool to get insights into a whatsapp chat.
    python report.py --file path/to/whatsapp_chat.txt
    ```
 
+Both iOS and Android chat exports are supported; the format is detected automatically. Note that Android text exports do not include call durations and only contain a generic `<Media omitted>` placeholder (no per-type media breakdown).
+
 Note: Since some visualizations require plotly you may need to install a chrome instance using:
 ```bash
 plotly_get_chrome
