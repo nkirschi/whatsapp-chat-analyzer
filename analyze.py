@@ -150,7 +150,7 @@ def plot_charts(info):
         color=author_stats_sorted["author"].to_list(),
         color_discrete_map=author_color_map,
         range_y=[
-            author_stats_sorted["avg_message_length"].min() * 0.95,
+            0,
             author_stats_sorted["avg_message_length"].max() * 1.05,
         ],
     )
