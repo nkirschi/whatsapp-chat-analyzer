@@ -177,13 +177,14 @@ def plot_charts(info):
         number_format="d",  # Integer format for emoji counts
     )
 
-    # heatmap of messages per day
+    # heatmap of messages per day, spanning the full chat history
+    days_back = (df["datetime"].max().date() - df["datetime"].min().date()).days + 1
     heatmap_chart(
         df,
         time_col="datetime",
         title="Messages per Day",
         save_path=os.path.join(PLOT_DIR, f"{chat_name}_messages_per_day_heatmap.png"),
-        days_back=365,
+        days_back=days_back,
         width=1400,
         height=300,
     )
